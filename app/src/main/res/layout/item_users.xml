@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    android:outlineSpotShadowColor="@color/gradient"
+    android:outlineAmbientShadowColor="@color/gradient2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameTv"
+            android:text="User Name"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Email"
+            android:id="@+id/useremailIv"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:textColor="#a9a9a9"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/usernameTv"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shareer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ListofPdfShow"></activity>
+        <activity android:name=".AppIntro.AppIntroActivity" />
+        <activity android:name=".UserGuide" />
+        <activity android:name=".ShowvideoUser" />
+        <activity android:name=".User.UserProfile" />
+        <activity
+            android:name=".Layout.MainPage"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".Fullscreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".Showvideo" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".MultipleImagesPackage.FolderListClient" />
+        <activity android:name=".MultipleImagesPackage.MultipleImagesListClient" />
+        <activity android:name=".MultipleImagesPackage.MultipleImagesList" />
+        <activity android:name=".MultipleImagesPackage.FolderList" />
+        <activity android:name=".MultipleImagesPackage.MultipleImages" />
+        <activity android:name=".ListofPdfClient" />
+        <activity android:name=".ImageHandlerPages.ImageDetailUser" />
+        <activity android:name=".ImageHandlerPages.ListofImagesUser" />
+        <activity android:name=".User.UsersList" />
+        <activity android:name=".ImageHandlerPages.ImageDetailActivity" />
+        <activity android:name=".ImageHandlerPages.ImageList" />
+        <activity android:name=".ListofPdf" />
+        <activity android:name=".PdfUpload" />
+        <activity android:name=".ImageHandlerPages.ImageUpload" />
+        <activity
+            android:name=".Client.RegisterClient"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Client.LoginClient"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".HomePage" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".User.RegisterUser"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".User.LoginUser"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.videocompressor"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/uri_provider" />
+        </provider>
+    </application>
+
+</manifest>

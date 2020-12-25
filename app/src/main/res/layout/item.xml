@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardUseCompatPadding="true"
+    android:background="@android:color/white"
+app:cardCornerRadius="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:orientation="horizontal">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/exoplayer_item"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:resize_mode="fill"
+            android:layout_margin="10dp"
+            app:use_controller="false">
+
+        </com.google.android.exoplayer2.ui.PlayerView>
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exoplayer_item"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/download_btn"
+            android:layout_width="188dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/tv_item_name"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/custom_button_blue"
+            android:src="@drawable/ic_download" />
+
+        <ImageButton
+            android:id="@+id/shareVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/download_btn"
+            android:layout_marginLeft="-364dp"
+            android:layout_marginTop="-47dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/exoplayer_item"
+            android:backgroundTint="#fff"
+            android:src="@drawable/ic_share" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

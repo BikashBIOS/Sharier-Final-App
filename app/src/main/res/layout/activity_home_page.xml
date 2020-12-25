@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+
+    tools:context=".HomePage">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addimage"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_button_blue"
+        android:text="Search Your File"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addpdf"
+        android:visibility="gone"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/custom_button_blue"
+        android:text="proceed to main page"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addpdf"
+        android:layout_marginTop="388dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:onClick="moveToImageListPage"
+        android:text="View your Uploaded Folders"
+        android:textColor="@color/gradient"
+        android:textSize="22sp" />
+
+</RelativeLayout>

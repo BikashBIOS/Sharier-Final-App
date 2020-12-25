@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sharier</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="user_guide">This <u>Sharier App</u> is a very simple app help you to upload your Image and video file to the cloud.This file are compressed and then upload.
+            You can share this file with any one.This User guide will help you to use this App easily.</string>
+    <string name="user_guide1">In order to upload your data Click on <b>Navigation Drawer--> Create Folder</b> Your default folder name is Folder1 You can change it, upload some Image
+     to create your cloud folder successfully now on back pressed you can view your Folder on clicking in on the folder you can upload your images and videos inside the folder</string>
+
+    <string name="find_folder">In order find other users data you need the Folder Name of other users Click on <b>Navigation Drawer--> User List</b> search the users by the username Now
+    .Now click on the username and provide the folder name now you can find the file inside the folder if that folder exist in the user account</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#f8f8ff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="WELCOME"
+        android:textColor="@color/gradient"
+        android:fontFamily="sans-serif"
+        android:textSize="50sp"
+        android:id="@+id/welcome"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:text="to"
+        android:textColor="@android:color/black"
+        android:fontFamily="serif-monospace"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:text="Sharer"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gradient2"
+        android:fontFamily="cursive"
+        android:textSize="70sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:text="Select your Post:"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/gradient"
+        android:fontFamily="serif-monospace"
+        android:textSize="20sp"
+        android:gravity="left"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_below="@+id/welcome"
+        android:text="User"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/choiceuser"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/choiceuser"
+        android:text="Client"
+        android:visibility="invisible"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/choiceclient"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:background="@drawable/custom_button_blue"/>
+
+
+
+</RelativeLayout>

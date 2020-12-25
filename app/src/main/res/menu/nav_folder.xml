@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/createFolder"
+            android:title="Create Folder"
+            android:iconTint="#fff"
+            android:icon="@drawable/ic_folder"/>
+
+        <item android:id="@+id/userList"
+            android:iconTint="#fff"
+            android:icon="@drawable/ic_person"
+            android:title="User List"/>
+
+        <item android:id="@+id/help"
+            android:iconTint="#fff"
+            android:icon="@drawable/ic_help"
+            android:title="User Guide"/>
+
+        <item android:title="Logout"
+            android:id="@+id/logOut"
+            android:icon="@drawable/logout1"
+            android:iconTint="#fff"/>
+
+    </group>
+
+</menu>

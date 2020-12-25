@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "447252585071",
+    "firebase_url": "https://sharer-2ff4e.firebaseio.com",
+    "project_id": "sharer-2ff4e",
+    "storage_bucket": "sharer-2ff4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447252585071:android:22e52053533a11eef8cb9a",
+        "android_client_info": {
+          "package_name": "com.example.shareer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447252585071-bfpdksuta44skb9bv6b0ge4kef1usiio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5i8NbG8Rlgrc2LTmHJwAkNb9CmQSnnT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447252585071-bfpdksuta44skb9bv6b0ge4kef1usiio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

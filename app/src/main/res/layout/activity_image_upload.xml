@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ImageHandlerPages.ImageUpload">
+
+    <Button
+        android:id="@+id/imgchoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE FILE"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16sp"
+        android:textColor="#ffffffff"
+        android:background="@drawable/custom_button_blue"/>
+
+    <EditText
+        android:id="@+id/filename"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="7dp"
+        android:hint="Enter Title" />
+
+    <TextView
+        android:id="@+id/showupload"
+        android:layout_width="119dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="39dp"
+        android:text="Show Uploads"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="366dp"
+        android:layout_height="440dp"
+        android:layout_above="@+id/progressbar"
+        android:layout_below="@id/mdesc"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="-4dp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="96dp"
+        />
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/custom_button_blue"
+        android:text="UPLOAD" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/gradient"
+        android:layout_marginTop="72dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/mdesc"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:hint="Enter Folder Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>

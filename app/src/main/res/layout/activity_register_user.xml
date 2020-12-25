@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".User.RegisterUser"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:elevation="4dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        android:outlineSpotShadowColor="@color/gradient"
+        android:outlineAmbientShadowColor="@color/gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a New Account"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:fontFamily="monospace"
+                />
+
+        </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your Details"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn More"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_username"
+            android:layout_marginTop="20dp"
+            app:boxStrokeColor="@color/gradient"
+            app:errorEnabled="true"
+            app:counterMaxLength="16"
+            app:counterEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:hint="Enter Name"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_useremail"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/gradient2"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_userpassword"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:boxStrokeColor="@color/gradient"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_usercpassword"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:boxStrokeColor="@color/gradient2"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lockopen"
+                    android:drawablePadding="10dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have an Account?"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:onClick="moveToLoginUser"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/userregister"
+            android:text="Sign up"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button_blue"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

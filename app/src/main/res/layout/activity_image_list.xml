@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ImageHandlerPages.ImageList">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_useremaillogin"
+        app:errorEnabled="true"
+        app:boxStrokeColor="@color/gradient2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/folderName"
+            android:hint="Folder Key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/btnLayout"
+        android:orientation="horizontal"
+        android:layout_below="@id/ed_useremaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/searchImage"
+            android:layout_marginRight="6dp"
+            android:layout_width="104dp"
+            android:layout_marginLeft="6dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_useremaillogin"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/custom_button_blue"
+            android:text="Search"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/searchVideo"
+            android:layout_below="@id/searchImage"
+            android:layout_width="wrap_content"
+            android:text="Search Videos"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+
+            android:background="@drawable/custom_button_blue"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/searchDoc"
+            android:layout_below="@id/searchImage"
+            android:layout_width="wrap_content"
+            android:text="Search PDF"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/custom_button_blue"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/recyclerview"
+        android:background="#EEEEEE"
+        android:layout_below="@id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

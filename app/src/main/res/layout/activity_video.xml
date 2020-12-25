@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".VideoActivity">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:id="@+id/videoview_main"
+        android:visibility="gone"
+        android:backgroundTint="@android:color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_video_name"
+        android:layout_marginTop="109dp"
+        app:boxStrokeColor="@color/gradient2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_video"
+            android:drawablePadding="10dp"
+            android:hint="Enter Video Title"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:text=" "
+        android:id="@+id/progressPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progressBar_main"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="@drawable/custom_button_blue"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:text="select" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="upload"
+        android:layout_gravity="end"
+        android:enabled="false"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button_blue"
+        android:textColor="@android:color/white"
+        android:id="@+id/uploadvideo"/>
+
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="40dp"
+        android:visibility="gone"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please wait, till the selection process gets completed"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/textshow"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show videos"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_blue"
+        android:textColor="@android:color/white"
+        android:id="@+id/showvideo"/>
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="input"
+        android:visibility="invisible"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="output"
+        android:visibility="invisible"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</LinearLayout>

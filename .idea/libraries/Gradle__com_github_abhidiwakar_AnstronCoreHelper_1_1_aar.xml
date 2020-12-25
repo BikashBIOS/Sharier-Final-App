@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.abhidiwakar:AnstronCoreHelper:1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b2c27f1bb2768d1c49d0649ee9854fa/jetified-AnstronCoreHelper-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b2c27f1bb2768d1c49d0649ee9854fa/jetified-AnstronCoreHelper-1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b2c27f1bb2768d1c49d0649ee9854fa/jetified-AnstronCoreHelper-1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.abhidiwakar/AnstronCoreHelper/1.1/3b40739d0376e1b819512fc4d3c1f821493b3f25/AnstronCoreHelper-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

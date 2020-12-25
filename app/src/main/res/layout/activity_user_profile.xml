@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".User.UserProfile">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:id="@+id/usernametextview"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/gradient2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unique ID: "
+        android:id="@+id/useridtextview"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/gradient2"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchfoldername"
+        app:errorEnabled="true"
+        android:layout_marginTop="200dp"
+        app:boxStrokeColor="@color/gradient2"
+        android:textColorHint="@color/gradient2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_folder"
+            android:drawablePadding="10dp"
+            android:hint="Enter Folder Name"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:id="@+id/enterfoldername"
+        android:background="@drawable/custom_button_blue"
+        android:text="enter"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
