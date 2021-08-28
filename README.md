@@ -1,5 +1,6 @@
-# Sharier-Final-App
-Share Images, Videos and PDFs among your Friends and Users.
+# Multimedia Sharing Android App
+Share Images, Videos and PDFs among your Friends and Families with this Android App App.
+
 
 **Libraries Imported:**
 
@@ -69,5 +70,7 @@ Share Images, Videos and PDFs among your Friends and Users.
 
 
 
+**NOTE - This Application was Made by Me in my 3rd year of B. Tech**
 
+Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.
 
