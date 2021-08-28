@@ -1,12 +1,15 @@
 # Sharier-Final-App
 Share Images, Videos and PDFs among your Friends and Users.
-Libraries Imported:
-PICASSO - To display Images.
-ExoPlayer - For Video Controls(Play/Pause), Fullscreen, Buffering
-Video Compressor Module - for compressing Videos.
-Firebase - To implement Firebase Storage, Database and Authentication
 
-Plan:
+**Libraries Imported:**
+
+1) Picasso - To display Images.
+2) ExoPlayer - For Video Controls(Play/Pause), Fullscreen Layout and Buffering.
+3) Video Compressor Module - for compressing Videos.
+4) Firebase - To implement Firebase Storage, Realtime Database and Authentication.
+
+**PLAN:**
+
 1) Multiple users can **Register** and **Login** on to the app.
 2) Create their own folders in which they can store their Videos, Images and Documents.
 3) 3 floating buttons for uploading Images, Videos and documents respectively.
@@ -21,9 +24,9 @@ Plan:
 12) **Download** or **View** the PDF documents from the Documents Fragment.
 13) After your work is completed, click on the **Logout** button on the menu to log out of the app.
 
-PROCESS
+**PROCESS:**
 
-1) Client and User separate Registration and Login pages.
+1) User has Registration and Login pages.
 2) Firebase Authentication is used for registering and login.
 3) Checking system for valid email and password.
 4) An user is alloted a name, an email, password and a specific id(automatically generated and checked by firebase).
@@ -54,15 +57,17 @@ PROCESS
 
 
 **Some Android Perspective Points:**
-1) 
 
-Picasso - for images
-For compressing images - bitmap
-for compressing video= videocompressor library (module)
-exoplayer - for video controls/player ....
-anstron core helper - to help jetpack libraries to import
+1) Card Views are used for Image and Video segments (and) also in Users List and Folders List.
+2) They are placed in the Recycler view in an Array list in their own respective fragments.
+3) SharedPreferences is used to navigate data and ids throughout the project.
+4) The Whole Realtime Database is provided by Firebase and the same is connected to Firebase Storage and Authentication.
+5) Exoplayer is fully used in the Video functional parts.
+6) Compression in Images is done by Bitmap and in Videos, a Video Compressor Module is used.
+7) Picasso library is used to display Images.
+8) Adapters for all the lists has been created to hold all the components of a particular user.
 
-where image is downloaded.
+
 
 
 
