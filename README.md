@@ -46,8 +46,15 @@ PROCESS
 21) "Videos" node will be created in the "Multiple" node to store all the videos nodes which is consisting of name and url.
 22) The same process goes for the documents/PDF uploading but this is not compressed as it will affect the quality of the document.
 23) You can view the PDF in the Documents fragment and can directly download it to the local device.
-24) When you want to see a particular user's contents, 
+24) When you want to see a particular user's contents, navigate to the Users List page.
+25) Search for the particular user you want to see the contents using the Search bar.
+26) Clicking on the particular user, a new page is opened in which you have just to enter the folder name to access that particular folder contents.
+27) Entering the Correct folder name, you can access all the Images, videos and pdf documents, the other user has uploaded in it.
+28) Can view, download and share the files as well.
 
+
+**Some Android Perspective Points:**
+1) 
 
 Picasso - for images
 For compressing images - bitmap
