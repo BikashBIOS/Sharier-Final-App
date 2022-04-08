@@ -1,4 +1,4 @@
-# Multimedia Sharing Android App
+# Cloud Media Sharing Android App
 Share Images, Videos and PDFs among your Friends and Families with this Android App App.
 
 
